@@ -63,54 +63,44 @@ Y= A⊕B
 
 
 **PROGRAM**
-```
+
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: NANDA KISHOR SURESH PRIYA
+ Developed by: Nithish Kumar S
  
- RegisterNumber: 24011485
-```
+ RegisterNumber: 212224230190
 
-```
-module logicgate(a,b,c);
- input a;
- input b;
- output [6:0] c;
- 
- 
-       assign c[0]=a&b;
-		 assign c[1]=a|b;
-		 assign c[2]=~(a&b);
-		 assign c[3]=~(a|b);
-		 assign c[4]=a^b;
-		 assign c[5]=~(a^b);
-		 assign c[6]=~a;
-		 
+ ```
+module logic_gates(a, b, c1, c2, c3, c4, c5, c6, c7);
+    input a, b;
+    output c1, c2, c3, c4, c5, c6, c7;
+
+    assign c1 = ~a;
+    assign c2 = a & b;
+    assign c3 = a | b;
+    assign c4 = ~(a & b);
+    assign c5 = ~(a | b);
+    assign c6 = a ^ b;
+    assign c7 = ~(a ^ b);
 endmodule
-
 ```
+
  
 **Logic symbol & Truthtable**
 
-
-![Screenshot (21)](https://github.com/user-attachments/assets/13dacfc1-53ca-4797-8c89-dae89f67a4ef)
-
-
-![Screenshot (22)](https://github.com/user-attachments/assets/95762bf6-3a5f-45d2-b238-3545b654b4b0)
+![DE EXP 1(2)](https://github.com/user-attachments/assets/63487daf-e82b-428b-8525-d01d155632c8)
 
 
 **RTL realization Output:** 
 
-![lg-lg](https://github.com/user-attachments/assets/a30c0d37-7c6b-4a2f-9a32-533b2fec149b)
+![Screenshot 2024-11-26 180740](https://github.com/user-attachments/assets/8d60c58f-a576-4a63-9cea-9fab1abd7d1d)
 
 
 **RTL**
 
-
-![lg-wf0](https://github.com/user-attachments/assets/f835eaf6-41f1-4c9c-971d-9e0231e39411)
-
+![DE EXP1(3)](https://github.com/user-attachments/assets/efd6fefe-25e4-45ac-8a53-79ed96ff73d2)
 
 **Result:**
-Thus the basic logic gates are studied and the ttruth tables are verified
 
+Thus the truth table of logic gates in Quartus II using Verilog programming are studied,verified and executed successfully.
 
